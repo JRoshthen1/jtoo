@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Home</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="buttons.css">
+	<!--  by jrosh - inspired by bento -->
+</head>
+
+<body>
+
+	<div class="container">
+		<!-- Clock and Greetings  -->
+		<div class="timeBlock">
+			<div class="clock">
+				<div id="hour"></div>
+				<div id="separator"></div>
+				<div id="minutes"></div>
+			</div>
+			<div class="date">
+				<div id="month"></div>
+				<div id="day"></div>
+			</div>
+			<div id="greetings"></div>
+		</div>
+
+		<div class="weather">
+			<img src="" id="weatherIcon"/>
+			<div id="description"></div>
+			<div id="temperature"></div>
+			<div id="location"></div>
+		</div>
+
+		<div class="textList">
+			<a class="listItem" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=jfKfPfyJRdk"><span>Lo-Fi Girl</span></a>
+			<a class="listItem" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=6UNXfsauQk4"><span>80s Classics</span></a>
+			<a class="listItem" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=mkJqzPfQtwM"><span>Hans Zimmer</span></a>
+			<a class="listItem" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=mqKb5c9Aqwk"><span>Classical Piano</span></a>
+		</div>
+
+
+		<div class="btnList">
+			<a href="https://github.com/" class="linkBtn">
+				<i icon-name="github" class="btnIcon"></i>
+			</a>
+			<a href="https://brew.sh/" class="linkBtn">
+				<i icon-name="beer" class="btnIcon"></i>
+			</a>
+			<a href="mailto:" class="linkBtn">
+				<i icon-name="mail" class="btnIcon"></i>
+			</a>
+			<a href="https://www.photopea.com/" class="linkBtn">
+				<i icon-name="file-image" class="btnIcon"></i>
+			</a>
+
+			<!-------------------->
+			<a href="https://www.netflix.com/browse" class="linkBtn">
+				<i icon-name="tv" class="btnIcon"></i>
+			</a>
+
+			<a href="https://hackernoon.com/" class="linkBtn">
+				<i icon-name="newspaper" class="btnIcon"></i>
+			</a>
+
+			<a href="https://news.ycombinator.com/" class="linkBtn">
+				<i icon-name="binary" class="btnIcon"></i>
+			</a>
+
+			<a href="https://www.reddit.com/" class="linkBtn">
+				<img src="/reddit.svg" class="btnIcon"/>
+			</a>
+
+		</div>
+
+
+
+
+	</div>
+
+	<script src="greeting.js"></script>
+	<script src="weather.js"></script>
+	<script src="https://unpkg.com/lucide@latest"></script>
+	<script>
+	  lucide.createIcons();
+	</script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,121 @@
+/* 
+     ██╗████████╗ ██████╗  ██████╗     ██╗  ██╗ ██████╗ ███╗   ███╗███████╗███████╗ ██████╗██████╗ ███████╗███████╗███╗   ██╗
+     ██║╚══██╔══╝██╔═══██╗██╔═══██╗    ██║  ██║██╔═══██╗████╗ ████║██╔════╝██╔════╝██╔════╝██╔══██╗██╔════╝██╔════╝████╗  ██║
+     ██║   ██║   ██║   ██║██║   ██║    ███████║██║   ██║██╔████╔██║█████╗  ███████╗██║     ██████╔╝█████╗  █████╗  ██╔██╗ ██║
+██   ██║   ██║   ██║   ██║██║   ██║    ██╔══██║██║   ██║██║╚██╔╝██║██╔══╝  ╚════██║██║     ██╔══██╗██╔══╝  ██╔══╝  ██║╚██╗██║
+╚█████╔╝   ██║   ╚██████╔╝╚██████╔╝    ██║  ██║╚██████╔╝██║ ╚═╝ ██║███████╗███████║╚██████╗██║  ██║███████╗███████╗██║ ╚████║
+ ╚════╝    ╚═╝    ╚═════╝  ╚═════╝     ╚═╝  ╚═╝ ╚═════╝ ╚═╝     ╚═╝╚══════╝╚══════╝ ╚═════╝╚═╝  ╚═╝╚══════╝╚══════╝╚═╝  ╚═══╝ 
+ ansi shadow acii art
+  */
+:root {
+    /* Font Size */
+    --fg-primary: 12vh; /* Time and Greetings */
+    --fg-secondary: 3vh; /* Greetings and Weather widger */
+    --fg-date: 6vh; /* Date */
+    --fg-btn: 18vh; /* buttons */
+    --fg-list: 2vh; /* Links List */
+    --icon: 3vh; /* Icon Size */
+    /* colors */
+    --fg: #f5eee6; /* Foreground color */
+    --sfg: #211f22; /* Secondary color */
+    --sfg-hover: #f5eee610; /* Secondary hover color */
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    transition: 0.3s ease-in-out;
+  }
+  body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/arin.png);
+    background-size:cover;
+    background-position-y: bottom;
+    background-position-x: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .container {
+    width: 175vh;
+    height: 85vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 30px;
+    padding: 20px;
+  }
+  
+/* 
+████████╗██╗███╗   ███╗███████╗
+╚══██╔══╝██║████╗ ████║██╔════╝
+   ██║   ██║██╔████╔██║█████╗  
+   ██║   ██║██║╚██╔╝██║██╔══╝  
+   ██║   ██║██║ ╚═╝ ██║███████╗
+   ╚═╝   ╚═╝╚═╝     ╚═╝╚══════╝ 
+*/
+  .timeBlock {
+    grid-row: 1;
+    grid-column: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--sfg);
+  }
+  .date {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .clock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #hour,
+  #separator,
+  #minutes {
+    font-size: var(--fg-primary);
+    font-weight: bolder;
+  }
+  #month,
+  #day {
+    font-size: var(--fg-date);
+    font-weight: bold;
+  }
+  #day {
+    margin-left: 1rem;
+  }
+  #greetings {
+    font-size: var(--fg-secondary);
+  }
+
+/* 
+██╗    ██╗███████╗ █████╗ ████████╗██╗  ██╗███████╗██████╗ 
+██║    ██║██╔════╝██╔══██╗╚══██╔══╝██║  ██║██╔════╝██╔══██╗
+██║ █╗ ██║█████╗  ███████║   ██║   ███████║█████╗  ██████╔╝
+██║███╗██║██╔══╝  ██╔══██║   ██║   ██╔══██║██╔══╝  ██╔══██╗
+╚███╔███╔╝███████╗██║  ██║   ██║   ██║  ██║███████╗██║  ██║
+ ╚══╝╚══╝ ╚══════╝╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝
+ */
+  
+ .weather{
+    grid-row: 1;
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    font-size: var(--fg-secondary);
+    color: var(--sfg);
+    font-weight: bolder;
+    line-height: 1.25;
+  }
+
+  .weather div{
+    margin-left: 10px;
+  }
