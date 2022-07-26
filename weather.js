@@ -5,7 +5,7 @@ const descElement = document.getElementById('description')
 
 function getWeather() {
 
-let url = 'http://api.weatherapi.com/v1/current.json?key=b9f3b87fd5e644a88dc150433222607&q=Copenhagen&aqi=no';
+let url = 'https://api.weatherapi.com/v1/current.json?key=b9f3b87fd5e644a88dc150433222607&q=copenhagen&aqi=no';
 //https://www.weatherapi.com/
 fetch(url).then(function(response) {
     let data = response.json();
@@ -18,6 +18,7 @@ function displayWeather(data) {
     locationElement.innerHTML = data.location.name;
     tempElement.innerHTML = `${data.current.temp_c}°C`;
     descElement.innerHTML = data.current.condition.text;
+    console.log(data.current)
 }
 )
 }

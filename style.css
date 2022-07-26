@@ -30,7 +30,8 @@
   body {
     width: 100vw;
     height: 100vh;
-    background-image: url(./arin.png);
+    background-image: url(https://jroshthen1.github.io/jtoo/arin.png);
+    /* background-image: url(/arin.png); */
     background-size:cover;
     background-position-y: bottom;
     background-position-x: center;
