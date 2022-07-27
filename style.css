@@ -11,7 +11,7 @@
     /* Font Size */
     --fg-primary: 12vh; /* Time and Greetings */
     --fg-secondary: 3vh; /* Greetings and Weather widget */
-    --fg-date: 6vh; /* Date */
+    --fg-date: 6vmin; /* Date */
     --fg-btn: 18vh; /* buttons */
     --fg-list: 2vh; /* Links List */
     --icon: 3vh; /* Icon Size */
@@ -70,7 +70,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 2vmin;
   }
   .clock {
     display: flex;
@@ -118,7 +118,7 @@
     justify-content: center;
   }
   .searchInput{
-    font-size: var(--fg-list);
+    font-size: 2vh;
     letter-spacing: 0.08vh;
     line-height: 0.8;
     width: 100%;
@@ -214,8 +214,8 @@
 }
 
 .linkBtn {
-  height: var(--fg-btn);
-  width: var(--fg-btn);
+  height: 18vh;
+  width: 18vh;
   background-color: var(--sfg);
   display: flex;
   justify-content: center;
@@ -260,7 +260,7 @@
   grid-template-rows: 4 1fr;
   background-color: var(--sfg);
   font-size: 2.2vh;
-  border-radius: 2vh;
+  border-radius: 20px;
   letter-spacing: .09vh;
 
  }

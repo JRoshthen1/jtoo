@@ -1,0 +1,41 @@
+@media only screen and (max-width: 700px) {
+    :root {
+        --fg-secondary: 2.5vh;
+        /* Greetings and Weather widget */
+    }
+
+    body{
+        background-position-y: bottom;
+        background-position-x: right;
+    }
+      
+    .container {
+        width: 90vw;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+    .weather {
+        display: none;
+    }
+    .search {
+        display: none;
+    }
+    .btnGrid {
+        justify-items: center;
+        align-items: center;
+        height: 40vh;
+        width: 100%;
+    }
+    .linkBtn {
+        height: 16vh;
+        width: 16vh;
+    }
+    .textList {
+        height: 40vh;
+    }
+    .btnListWork {
+        display: none;
+    }
+}
