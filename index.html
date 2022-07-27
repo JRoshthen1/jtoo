@@ -28,52 +28,57 @@
 		</div>
 
 		<div class="weather">
-			<img id="weatherIcon"/>
+			<img id="weatherIcon" />
 			<div id="description"></div>
 			<div id="temperature"></div>
 			<div id="location"></div>
 		</div>
 
+		<div  class="search">
+			<div class="searchContainer">
+				<form method="get" class="searchForm" id="gSearch" action="http://www.google.com/search/">
+					<input class="searchInput" type="text" name="q" />
+					<button class="searchSubmit" type="submit"><img src="g.svg"></button>
+				</form>
+
+				<form method="get" class="searchForm" id="ddgSearch" action="https://duckduckgo.com/">
+					<input class="searchInput" type="text" name="q" />
+					<button class="searchSubmit" type="submit"><img src="ddg.svg"></button>
+				</form>
+
+				<form method="get" class="searchForm" action="https://you.com/search" id="youSearch">
+					<input class="searchInput ys" type="text" name="q" />
+					<button class="searchSubmit" type="submit"><img src="you.svg"></button>
+				</form>
+			</div>
+		</div>
+
 		<div class="textList">
-			<a class="listItem" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=jfKfPfyJRdk"><span>Lo-Fi Girl</span></a>
-			<a class="listItem" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=6UNXfsauQk4"><span>80s Classics</span></a>
-			<a class="listItem" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=mkJqzPfQtwM"><span>Hans Zimmer</span></a>
-			<a class="listItem" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=mqKb5c9Aqwk"><span>Classical Piano</span></a>
+			<a class="listItem" target="_blank" rel="noopener noreferrer"
+				href="https://www.youtube.com/watch?v=jfKfPfyJRdk"><span>Lo-Fi Girl</span></a>
+			<a class="listItem" target="_blank" rel="noopener noreferrer"
+				href="https://www.youtube.com/watch?v=6UNXfsauQk4"><span>80s Classics</span></a>
+			<a class="listItem" target="_blank" rel="noopener noreferrer"
+				href="https://www.youtube.com/watch?v=mkJqzPfQtwM"><span>Hans Zimmer</span></a>
+			<a class="listItem" target="_blank" rel="noopener noreferrer"
+				href="https://www.youtube.com/watch?v=mqKb5c9Aqwk"><span>Classical Piano</span></a>
 		</div>
 
 
-		<div class="btnList">
-			<a href="https://github.com/" class="linkBtn">
-				<i icon-name="github" class="btnIcon"></i>
-			</a>
-			<a href="https://brew.sh/" class="linkBtn">
-				<i icon-name="beer" class="btnIcon"></i>
-			</a>
-			<a href="mailto:" class="linkBtn">
-				<i icon-name="mail" class="btnIcon"></i>
-			</a>
-			<a href="https://www.photopea.com/" class="linkBtn">
-				<i icon-name="file-image" class="btnIcon"></i>
-			</a>
-
-			<!-------------------->
-			<a href="https://www.netflix.com/browse" class="linkBtn">
-				<i icon-name="tv" class="btnIcon"></i>
-			</a>
-
-			<a href="https://hackernoon.com/" class="linkBtn">
-				<i icon-name="newspaper" class="btnIcon"></i>
-			</a>
-
-			<a href="https://news.ycombinator.com/" class="linkBtn">
-				<i icon-name="binary" class="btnIcon"></i>
-			</a>
-
-			<a href="https://www.reddit.com/" class="linkBtn">
-				<img src="reddit.svg" class="btnIcon"/>
-			</a>
-
+		<div class="btnListWork btnGrid">
+			<a href="https://github.com/" class="linkBtn"><i icon-name="github" class="btnIcon"></i></a>
+			<a href="https://brew.sh/" class="linkBtn"><i icon-name="beer" class="btnIcon"></i></a>
+			<a href="mailto:" class="linkBtn"><i icon-name="mail" class="btnIcon"></i></a>
+			<a href="https://www.photopea.com/" class="linkBtn"><i icon-name="file-image" class="btnIcon"></i></a>
 		</div>
+		<!-------------------->
+		<div class="btnListLeisure btnGrid">
+			<a href="https://www.netflix.com/browse" class="linkBtn"><i icon-name="tv" class="btnIcon"></i></a>
+			<a href="https://hackernoon.com/" class="linkBtn"><i icon-name="newspaper" class="btnIcon"></i></a>
+			<a href="https://news.ycombinator.com/" class="linkBtn"><i icon-name="binary" class="btnIcon"></i></a>
+			<a href="https://www.reddit.com/" class="linkBtn"><img src="reddit.svg" class="btnIcon" /></a>
+		</div>
+
 
 
 
@@ -84,7 +89,7 @@
 	<script src="weather.js"></script>
 	<script src="https://unpkg.com/lucide@latest"></script>
 	<script>
-	  lucide.createIcons();
+		lucide.createIcons();
 	</script>
 
 

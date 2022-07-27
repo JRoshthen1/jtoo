@@ -13,8 +13,8 @@ const gree4 = `${greetings.Evening}\xa0`;
 
 
 //TIME
-const today = new Date();
-const hour = today.getHours();
+const time = new Date();
+const hour = time.getHours();
 const name = "Martin";
 
 // select which greeting to display

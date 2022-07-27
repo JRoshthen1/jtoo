@@ -19,7 +19,7 @@ function displayWeather(data) {
     tempElement.innerHTML = `${data.current.temp_c}°C`;
     descElement.innerHTML = data.current.condition.text;
 //    console.log(data.current) // Console log all the current data
-}
-)
-}
+})}
+
 getWeather()
+
