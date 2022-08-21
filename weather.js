@@ -18,7 +18,7 @@ function displayWeather(data) {
     locationElement.innerHTML = data.location.name;
     tempElement.innerHTML = `${data.current.temp_c}°C`;
     descElement.innerHTML = data.current.condition.text;
-//    console.log(data.current) // Console log all the current data
+//   console.log(data.current) // Console log all the current data
 })}
 
 getWeather()

@@ -1,0 +1,37 @@
+/* Example userChrome.css file */
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+.browser-toolbar:not(.titlebar-color) {
+  background: #19171a !important;
+  color: var(--toolbar-color);
+}
+#titlebar{
+  background: #19171a !important;
+  padding-top: 5px;
+}
+
+#navigator-toolbox {
+  border: none !important;
+}
+#identity-box{
+  display: none;
+}
+
+
+#nav-bar {
+  box-shadow: unset !important;
+  -moz-box-ordinal-group: 20 !important;
+  margin-top: -1px !important;
+}
+#nav-bar:not(:-moz-lwtheme) {
+  box-shadow: unset !important;
+}
+
+#urlbar-background, #searchbar{
+  background-color: #66845514 !important;
+  border-radius: 15px !important;
+
+}
+#urlbar-input-container {
+  padding: 0px 0px 0px 10px !important;
+}
