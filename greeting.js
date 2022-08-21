@@ -15,7 +15,7 @@ const gree4 = `${greetings.Evening}\xa0`;
 //TIME
 const time = new Date();
 const hour = time.getHours();
-const name = "Martin";
+const name = "Friend";
 
 // select which greeting to display
 if (hour >= 23 || hour < 5) {
