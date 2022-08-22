@@ -180,8 +180,12 @@
     line-height: 1.25;
     letter-spacing: .09vh;
   }
-  .weather div{
-    margin-left: 10px;
+  .wind{
+    display: flex;
+    flex-direction: row;
+  }
+  #windDirection{
+    margin-left: 8px;
   }
   #weatherIcon{
     height: 64px;
