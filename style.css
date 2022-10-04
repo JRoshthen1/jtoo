@@ -114,14 +114,14 @@
     width: 90%;
     display: flex;
     flex-direction: column;
-    align-items: stretch;
+    align-items: flex-end;
     justify-content: center;
   }
   .searchInput{
     font-size: 2vh;
     letter-spacing: 0.08vh;
     line-height: 0.8;
-    width: 100%;
+    width: 20vw;
     height: 6vh;
     background-color: var(--sfg);
     border-radius: 20px;
@@ -141,23 +141,25 @@
     margin-bottom: 10px;
   }
   .searchSubmit{
+    padding-right: 5px;
+    margin-left: 7px;
+    white-space: nowrap;
     background: transparent;
-    border: none; 
-    position: absolute;
-    right: 10px;
-    width: var(--icon);
-    height: var(--icon);
+    border: none;
+    border-right: 1px solid var(--fg); 
     cursor: pointer;
+    color: var(--sfg);
+    width: max-content;
   }
+
   .searchSubmit:hover{
-    transform: rotate(-20deg);
+    text-decoration: underline;
   }
   .searchSubmit:active{
-    transform: rotate(-20deg);
+
   }
   .searchSubmit:focus{
-    border: none;
-    transform: rotate(-20deg);
+
   }
 /* 
 ██╗    ██╗███████╗ █████╗ ████████╗██╗  ██╗███████╗██████╗ 
