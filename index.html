@@ -11,17 +11,6 @@
 	<!--  by jrosh - inspired by bento -->
 </head>
 
-<!-- GOOGLE ANALYTICS -->
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-J6MB3HLMHX"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-J6MB3HLMHX');
-</script>
-
 
 
 <body>
@@ -38,8 +27,12 @@
 				<div id="day"></div>
 			</div>
 			<div id="greetings"></div>
+			
+
 		</div>
 
+
+		<!-- Weather -->
 		<div class="weather">
 			<img id="weatherIcon" />
 			<div id="description"></div>
@@ -50,7 +43,7 @@
 			</div>
 			<div id="location"></div>
 		</div>
-
+<!-- Search -->
 		<div class="search">
 			<div class="searchContainer">
 				<form method="get" class="searchForm" id="gSearch" action="https://www.google.com/">
@@ -68,6 +61,23 @@
 					<input class="searchInput" type="text" name="q" />
 				</form>
 			</div>
+
+						<!-- Quote -->
+			<div class="quoteContainer">
+				<q id="quote"></q>
+				<h5 id="author"></h5>
+			</div>
+			<script>
+				fetch("https://api.quotable.io/random?tags=technology,famous-quotes").then(function (response) {
+					return response.json();
+				}).then(function (data) {
+					console.log(data)
+					document.getElementById("author").innerHTML = "- " + data.author;
+					document.getElementById("quote").innerHTML = data.content;
+				}).catch(function () {
+					console.log("Booo");
+				});
+			</script>
 		</div>
 
 		<div class="textList">
@@ -95,7 +105,6 @@
 			<a href="https://news.ycombinator.com/" class="linkBtn"><i icon-name="binary" class="btnIcon"></i></a>
 			<a href="https://www.reddit.com/" class="linkBtn"><img src="reddit.svg" class="btnIcon" /></a>
 		</div>
-
 
 
 
